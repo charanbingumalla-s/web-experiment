@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grand Palace Hotel</title>
+    <link rel="stylesheet" href="hotel.css">
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f1ea;
+    color: #333;
+}
+.header {
+    background-color: #6b4226;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+.header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+.header p {
+    font-size: 17px;
+}
+.main {
+    width: 80%;
+    margin: auto;
+}
+.welcome {
+    background-color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 25px;
+}
+.welcome h2,
+.rooms h2,
+.booking h2 {
+    color: #6b4226;
+}
+.rooms {
+    padding: 20px 0;
+}
+.room {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 5px solid #c9a66b;
+}
+.booking {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+.fieldset {
+    border: 2px solid #c9a66b;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+.legend {
+    color: #6b4226;
+    font-weight: bold;
+}
+.label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+.input,
+.textarea {
+    width: 90%;
+    padding: 9px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+.textarea {
+    height: 80px;
+}
+.button {
+    background-color: #6b4226;
+    color: white;
+    padding: 12px 25px;
+    border: 0;
+    margin: 5px;
+    border-radius: 5px;
+}
+.footer {
+    background-color: #6b4226;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+    </style>
+</head>
+<body>
+<header class="header">
+    <h1>🏨 Grand Palace Hotel</h1>
+    <p>Luxury Stay • Comfort • Excellent Service</p>
+</header>
+<main class="main">
+    <section class="welcome">
+        <h2>Welcome to Grand Palace Hotel</h2>
+        <p>Enjoy a comfortable and memorable stay with our excellent facilities.</p>
+    </section>
+    <section class="rooms">
+        <h2>Our Rooms</h2>
+        <article class="room">
+            <h3>Deluxe Room</h3>
+            <p>Comfortable room with modern facilities and free Wi-Fi.</p>
+            <p>Price: ₹3000 per night</p>
+        </article>
+        <article class="room">
+            <h3>Luxury Suite</h3>
+            <p>Spacious suite with premium facilities and beautiful views.</p>
+            <p>Price: ₹5000 per night</p>
+        </article>
+    </section>
+    <section class="booking">
+        <h2>Book Your Room</h2>
+        <form class="form">
+            <fieldset class="fieldset">
+                <legend class="legend">Guest Information</legend>
+                <label class="label">Full Name:</label>
+                <input class="input" type="text" placeholder="Enter name">
+                <label class="label">Email:</label>
+                <input class="input" type="email" placeholder="Enter email">
+                <label class="label">Phone:</label>
+                <input class="input" type="tel" placeholder="Enter phone">
+            </fieldset>
+            <fieldset class="fieldset">
+                <legend class="legend">Booking Details</legend>
+                <label class="label">Room Type:</label>
+                <select class="input">
+                    <option>Deluxe Room</option>
+                    <option>Luxury Suite</option>
+                    <option>Family Room</option>
+                </select>
+                <label class="label">Guests:</label>
+                <input class="input" type="number" min="1" max="10">
+                <label class="label">Check-in:</label>
+                <input class="input" type="date">
+                <label class="label">Check-out:</label>
+                <input class="input" type="date">
+            </fieldset>
+            <fieldset class="fieldset">
+                <legend class="legend">Preferences</legend>
+                <label class="label">Bed Type:</label>
+                <input type="radio" name="bed"> Single
+                <input type="radio" name="bed"> Double
+                <input type="radio" name="bed"> King
+                <label class="label">Facilities:</label>
+                <input type="checkbox"> Wi-Fi
+                <input type="checkbox"> Breakfast
+                <input type="checkbox"> Parking
+                <label class="label">Special Request:</label>
+                <textarea class="textarea" placeholder="Your request"></textarea>
+            </fieldset>
+            <button class="button" type="submit" required>Book Now</button>
+            <button class="button" type="reset" required >Reset</button>
+        </form>
+    </section>
+</main>
+<footer class="footer">
+    <p>© 2026 Grand Palace Hotel | All Rights Reserved</p>
+</footer>
+</body>
+</html>
