@@ -107,12 +107,17 @@
         <article class="room">
             <h3>Deluxe Room</h3>
             <p>Comfortable room with modern facilities and free Wi-Fi.</p>
-            <p>Price: ₹3000 per night</p>
+            <p>Price: ₹5000 per night</p>
         </article>
         <article class="room">
             <h3>Luxury Suite</h3>
             <p>Spacious suite with premium facilities and beautiful views.</p>
-            <p>Price: ₹5000 per night</p>
+            <p>Price: ₹8000 per night</p>
+        </article>
+        <article class="room">
+            <h3>Family Room</h3>
+            <p>Perfect for families, with extra space and amenities.</p>
+            <p>Price: ₹4000 per night</p>
         </article>
     </section>
     <section class="booking">
@@ -151,16 +156,41 @@
                 <label class="label">Facilities:</label>
                 <input type="checkbox"> Wi-Fi
                 <input type="checkbox"> Breakfast
-                <input type="checkbox"> Parking
+                <label class="label">Parking:</label>
+                <select class="input">
+                    <option>car</option>
+                    <option>bike</option>
+                    <option>none</option>
+                </select>
                 <label class="label">Special Request:</label>
                 <textarea class="textarea" placeholder="Your request"></textarea>
             </fieldset>
+            <fieldset class="fieldset">
+                <legend class="legend">Payment</legend>
+                <label class="label">Payment Method:</label>
+                <select class="input">
+                    <option>Credit Card</option>
+                    <option>Debit Card</option>
+                    <option>UPI</option>
+                    <option>Net Banking</option>
+                </select>
+                <label class="label">Cardholder Name:</label>
+                <input class="input" type="text" placeholder="Enter cardholder name">
+                <label class="label">Card Number:</label>
+                <input class="input" type="text" placeholder="Enter card number">
+                <label class="label">Expiry Date:</label>
+                <input class="input" type="month">
+                <label class="label">CVV:</label>
+                <input class="input" type="text" placeholder="Enter CVV" >  
+                <div style="padding-top: 20px;">
             <button class="button" type="submit" required>Book Now</button>
             <button class="button" type="reset" required >Reset</button>
+        </div>
         </form>
     </section>
 </main>
 <footer class="footer">
+    <p>Contact us: +91 98xxxxxx10 | Email: info@grandpalacehotel.com</p>
     <p>© 2026 Grand Palace Hotel | All Rights Reserved</p>
 </footer>
 </body>
