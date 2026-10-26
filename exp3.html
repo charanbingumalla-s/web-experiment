@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily News</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            color: #e63946;
+            font-size: 36px;
+        }
+
+        header span {
+            color: #172b4d;
+        }
+
+        nav {
+            background: #172b4d;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 16px;
+        }
+
+        nav a:hover {
+            background: #e63946;
+        }
+
+        .breaking {
+            background: #e63946;
+            color: white;
+            padding: 12px 5%;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 25px auto;
+        }
+
+        .featured {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background: white;
+            margin-bottom: 30px;
+        }
+
+        .featured img {
+            width: 100%;
+            height: 100%;
+            min-height: 250px;
+            object-fit: cover;
+        }
+
+        .featured-content {
+            padding: 25px;
+        }
+
+        .tag {
+            color: #e63946;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        h2 {
+            color: #172b4d;
+            border-left: 5px solid #e63946;
+            padding-left: 12px;
+            margin: 25px 0 15px;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px #ddd;
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card h3 {
+            margin: 8px 0;
+        }
+
+        .card p {
+            font-size: 14px;
+        }
+
+        .author {
+            color: #777;
+            margin-top: 12px;
+            font-size: 12px !important;
+        }
+
+        footer {
+            background: #172b4d;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 35px;
+        }
+
+        footer span {
+            color: #e63946;
+        }
+
+        @media (max-width: 800px) {
+            .featured {
+                grid-template-columns: 1fr;
+            }
+
+            .news-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 550px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            .container {
+                width: 94%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>DAILY <span>NEWS</span></h1>
+        <p>Your trusted source for the latest news</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#national">National</a>
+        <a href="#international">International</a>
+        <a href="#sports">Sports</a>
+        <a href="#technology">Technology</a>
+        <a href="#business">Business</a>
+    </nav>
+
+    <div class="breaking">
+        <strong>BREAKING NEWS:</strong>
+        Stay updated with the latest headlines!
+    </div>
+
+    <main class="container" id="home">
+
+        <section class="featured">
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80"
+                 alt="Modern office building">
+
+            <div class="featured-content">
+                <span class="tag">FEATURED STORY</span>
+                <h2>Today's Top Stories Around the World</h2>
+                <p>Discover important developments in politics,
+                   technology, sports and business.</p>
+                <p class="author">By Rahul Sharma | October 26, 2026</p>
+            </div>
+        </section>
+
+        <section id="national">
+            <h2>National News</h2>
+            <div class="news-grid">
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=600&q=80" alt="Indian monument">
+                    <div class="card-content">
+                        <span class="tag">NATIONAL</span>
+                        <h3>India's Development and Infrastructure</h3>
+                        <p>Explore developments across India's cities and states.</p>
+                        <p class="author">By Ananya Rao</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="Modern buildings">
+                    <div class="card-content">
+                        <span class="tag">NATIONAL</span>
+                        <h3>Urban Development Updates</h3>
+                        <p>Discover changes in modern Indian cities.</p>
+                        <p class="author">By Arjun Kumar</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="international">
+            <h2>International News</h2>
+            <div class="news-grid">
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=600&q=80" alt="Government buildings">
+                    <div class="card-content">
+                        <span class="tag">WORLD</span>
+                        <h3>Global Leaders Discuss Cooperation</h3>
+                        <p>Countries discuss important international issues.</p>
+                        <p class="author">By Priya Mehta</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=600&q=80" alt="City skyline">
+                    <div class="card-content">
+                        <span class="tag">WORLD</span>
+                        <h3>Major Cities Around the World</h3>
+                        <p>Explore developments in cities worldwide.</p>
+                        <p class="author">By David Wilson</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="sports">
+            <h2>Sports News</h2>
+            <div class="news-grid">
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=600&q=80" alt="Cricket stadium">
+                    <div class="card-content">
+                        <span class="tag">SPORTS</span>
+                        <h3>Latest Cricket Updates</h3>
+                        <p>Follow cricket matches and player performances.</p>
+                        <p class="author">By Kiran Reddy</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=600&q=80" alt="Athletes running">
+                    <div class="card-content">
+                        <span class="tag">SPORTS</span>
+                        <h3>Athletes Prepare for Competitions</h3>
+                        <p>Discover stories from the world of athletics.</p>
+                        <p class="author">By Neha Singh</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="technology">
+            <h2>Technology News</h2>
+            <div class="news-grid">
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&q=80" alt="Artificial intelligence">
+                    <div class="card-content">
+                        <span class="tag">TECHNOLOGY</span>
+                        <h3>Artificial Intelligence Advances</h3>
+                        <p>Explore AI developments and their applications.</p>
+                        <p class="author">By Aman Verma</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" alt="Electronic circuit board">
+                    <div class="card-content">
+                        <span class="tag">TECHNOLOGY</span>
+                        <h3>New Computing Innovations</h3>
+                        <p>Discover advances in computing and electronics.</p>
+                        <p class="author">By Sneha Patel</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="business">
+            <h2>Business News</h2>
+            <div class="news-grid">
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Business analytics">
+                    <div class="card-content">
+                        <span class="tag">BUSINESS</span>
+                        <h3>Businesses Embrace Digital Tools</h3>
+                        <p>Companies explore digital transformation.</p>
+                        <p class="author">By Vikram Shah</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?auto=format&fit=crop&w=600&q=80" alt="Business workspace">
+                    <div class="card-content">
+                        <span class="tag">BUSINESS</span>
+                        <h3>Startups Explore New Markets</h3>
+                        <p>Entrepreneurs explore business opportunities.</p>
+                        <p class="author">By Meera Joshi</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <h2><span>DAILY</span> <span>NEWS</span></h2>
+        <p>Your daily source for stories that matter.</p>
+        <p>&copy; 2026 Daily News. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
